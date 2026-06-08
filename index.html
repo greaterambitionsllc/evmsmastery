@@ -62,11 +62,14 @@
   }
   .hero-eyebrow {
     font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 3px;
-    color: var(--gold);
+    font-size: 0.68rem;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    margin-bottom: 12px;
+    color: var(--gold);
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
   }
   .hero h1 {
     font-family: 'Playfair Display', serif;
@@ -94,6 +97,13 @@
     letter-spacing: 2px;
     color: var(--gold);
     text-transform: uppercase;
+  }
+
+  .hero-cta-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   /* ── NAV ── */
@@ -576,6 +586,37 @@
   }
   .guide-footer span { color: var(--gold); }
 
+  .footer .page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: var(--gold);
+  }
+
+  .footer-brand span {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: block;
+    margin-top: 4px;
+  }
+  
+  .footer-copy {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-align: right;
+    line-height: 1.8;
+  }
+ 
   /* accordion */
   .accordion { margin-bottom: 12px; }
   .accordion-header {
@@ -624,11 +665,15 @@
 
 <!-- HERO -->
 <div class="hero">
-  <div class="logo-zone logo-zone-hero" title="Place Greater Ambitions LLC logo here">[ Logo ]</div>
-  <div class="hero-eyebrow"><a href='https://postimg.cc/bSYhPL8Q' target='_blank'><img src='https://i.postimg.cc/bSYhPL8Q/rev-Screenshot-2026-04-27-at-10-23-19-AM.png' border='0' alt='rev-Screenshot-2026-04-27-at-10-23-19-AM'></a><br> - PM Intelligence Series</div>
+  <div class="logo-zone logo-zone-hero" title="Place Greater Ambitions LLC logo here"><a href='https://postimg.cc/bSYhPL8Q' target='_blank'><img src='https://i.postimg.cc/bSYhPL8Q/rev-Screenshot-2026-04-27-at-10-23-19-AM.png' border='0' alt='rev-Screenshot-2026-04-27-at-10-23-19-AM'></a></div>
+  <div class="hero-eyebrow">PM Intelligence Series</div>
   <h1>Earned Value Management<br><span>Mastery Reference Guide</span></h1>
   <p class="hero-sub">A practitioner's guide to EVMS fundamentals, EAC management, data interpretation, and decision-driving metrics — built for enterprise program leaders.</p>
   <div class="hero-badge">Dr. Minina Johnson, DBA, PMP · Greater Ambitions LLC</div>
+   <div class="hero-cta-row">
+      <a href="#start" class="btn-primary">Read the Guide ↓</a>
+      <a href="#cta" class="btn-ghost">Book a Strategy Call →</a>
+    </div>
 </div>
 
 <!-- NAV -->
@@ -1187,8 +1232,13 @@
 <!-- FOOTER -->
 <div class="guide-footer">
   <div class="logo-zone logo-zone-footer" title="Place Greater Ambitions LLC logo here"><a href='https://postimg.cc/bSYhPL8Q' target='_blank'><img src='https://i.postimg.cc/bSYhPL8Q/rev-Screenshot-2026-04-27-at-10-23-19-AM.png' border='0' alt='rev-Screenshot-2026-04-27-at-10-23-19-AM'></a></div>
-  <span>Greater Ambitions LLC</span> · PM + Operations Consultancy · Tucson, AZ<br>
-  Diagnose. Build. Execute. Scale.
+  <span>Diagnose. Build. Execute. Scale.</span>
+  
+  <div class="footer-copy">
+      © 2025 Greater Ambitions LLC. All Rights Reserved.<br>
+      Dr. Minina Johnson, DBA, PMP, CSM · Founder & Strategic Execution Architect<br>
+      Diversity-Owned · Tucson, AZ
+    </div>
 </div>
 
 <script>
