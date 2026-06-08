@@ -35,37 +35,7 @@
     line-height: 1.6;
   }
 
-  /* ── LOGO ZONES ── */
-  .logo-zone {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1.5px dashed rgba(168,118,5,0.4);
-    border-radius: 3px;
-    background: rgba(168,118,5,0.05);
-    color: rgba(168,118,5,0.5);
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: center;
-    transition: border-color 0.2s, background 0.2s;
-    cursor: default;
-    user-select: none;
-  }
-  .logo-zone:hover {
-    border-color: rgba(168,118,5,0.7);
-    background: rgba(168,118,5,0.1);
-  }
-  .logo-zone-hero {
-    width: 180px;
-    height: 64px;
-    margin-bottom: 24px;
-  }
-  .logo-zone-footer {
-    width: 140px;
-    height: 52px;
-    margin: 0 auto 16px;
+  
   }
 
   /* ── HERO ── */
@@ -656,8 +626,8 @@
 
 <!-- HERO -->
 <div class="hero">
-  <div class="logo-zone logo-zone-hero" title="Place Greater Ambitions LLC logo here"><a href='https://postimg.cc/bSYhPL8Q' target='_blank'><img src='https://i.postimg.cc/bSYhPL8Q/rev-Screenshot-2026-04-27-at-10-23-19-AM.png' border='0' alt='rev-Screenshot-2026-04-27-at-10-23-19-AM'></a></div>
-  <div class="hero-eyebrow">Greater Ambitions LLC · PM Intelligence Series</div>
+  <div class="logo-zone logo-zone-hero" title="Place Greater Ambitions LLC logo here">[ Logo ]</div>
+  <div class="hero-eyebrow"><a href='https://postimg.cc/bSYhPL8Q' target='_blank'><img src='https://i.postimg.cc/bSYhPL8Q/rev-Screenshot-2026-04-27-at-10-23-19-AM.png' border='0' alt='rev-Screenshot-2026-04-27-at-10-23-19-AM'></a><br> - PM Intelligence Series</div>
   <h1>Earned Value Management<br><span>Mastery Reference Guide</span></h1>
   <p class="hero-sub">A practitioner's guide to EVMS fundamentals, EAC management, data interpretation, and decision-driving metrics — built for enterprise program leaders.</p>
   <div class="hero-badge">Dr. Minina Johnson, DBA, PMP · Greater Ambitions LLC</div>
@@ -704,7 +674,7 @@
 
   <!-- derived metrics -->
   <div class="section-title" style="font-size:20px; margin-bottom: 8px;">Core <span>Performance Metrics</span></div>
-  <p class="section-lead" style="margin-bottom:20px;">Derived from PV, EV, and AC — these six metrics tell the whole story.</p>
+  <p class="section-lead" style="margin-bottom:20px;">Derived from PV, EV, and AC — these eight metrics tell the whole story.</p>
   <div class="formula-grid">
     <div class="formula-card">
       <div class="formula-label">Schedule Performance</div>
@@ -741,6 +711,18 @@
       <div class="formula-name">Budget at Completion (BAC)</div>
       <div class="formula-equation">BAC = Total authorized budget</div>
       <div class="formula-desc">The total approved budget for the entire scope of work. BAC is set through the PMB and can only be changed through formal re-baseline or OTB/OTS processes. All forecasting anchors to BAC.</div>
+    </div>
+    <div class="formula-card critical">
+      <div class="formula-label">Forward Forecast</div>
+      <div class="formula-name">Estimate to Complete (ETC)</div>
+      <div class="formula-equation">ETC = EAC − AC</div>
+      <div class="formula-desc">The expected cost to finish all remaining work from today forward. ETC is the PM's forward-looking commitment — it must be grounded in a credible plan, not arithmetic alone. <strong>CAMs own their ETCs.</strong> An ETC that diverges significantly from (BAC − EV) ÷ CPI demands justification. Watch for ETCs that are consistently optimistic period over period — that is a data integrity red flag.</div>
+    </div>
+    <div class="formula-card critical">
+      <div class="formula-label">Total Program Forecast</div>
+      <div class="formula-name">Estimate at Completion (EAC)</div>
+      <div class="formula-equation">EAC = AC + ETC</div>
+      <div class="formula-desc">The PM's current best estimate of total program cost at completion. EAC = AC (what's been spent) + ETC (what remains). It is not a single number — it should be calculated using multiple methods (CPI-based, management plan, composite) and triangulated for credibility. <strong>EAC is the most scrutinized metric in any program review.</strong> The spread between your reported EAC and the statistical EAC (BAC ÷ CPI) is your credibility exposure.</div>
     </div>
   </div>
 
